@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>locanto automatización</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+        <form action="#" method="post">
+            <div class="container">
+              <h1>Información</h1>
+              <p>Por favor complete este formulario para proceder</p>
+              <hr>
+              
+              <label for="category"><b>Bebés y niños :</b></label>
+              <select name="subsubcompraventa" id="subsubcompraventa" required>
+                <option value="" >Por favor seleccione una opción</option>
+                <option value="text=Artículos para niños" >Artículos para niños</option>
+                <option value="text=Carritos y sillas de paseo" >Carritos y sillas de paseo</option>
+                <option value="text=Dormitorios infantiles" >Dormitorios infantiles</option>
+                <option value="text=Juguetes, juegos" >Juguetes, juegos</option>
+                <option value="text=Ropa de bebé e infantil" >Ropa de bebé e infantil</option>
+                <option value="text=Sillas de coche" >Sillas de coche</option>
+              </select>
+              <hr>
+            </div>
+            <button type="submit" class="registerbtn"  >Empezar</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>locanto automatización</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+        <form action="#" method="post">
+            <div class="container">
+              <h1>Información</h1>
+              <p>Por favor complete este formulario para proceder</p>
+              <hr>
+              
+              <label for="category"><b>Comunidad :</b></label>
+              <select name="subcomunidad" id="subcomunidad" required>
+                <option value="" >Por favor seleccione una opción</option>
+                <option value="text=Animadores de fiestas" >Animadores de fiestas</option>
+                <option value="text=Ayuda a domicilio" >Ayuda a domicilio</option>
+                <option value="text=Canguros" >Canguros</option>
+                <option value="text=Compartir afición" >Compartir afición</option>
+                <option value="text=Compartir coche" >Compartir coche</option>
+                <option value="text=Cuidado de personas mayores" >Cuidado de personas mayores</option>
+                <option value="text=Cuidadores de mascotas" >Cuidadores de mascotas</option>
+                <option value="text=Habilidades, intercambio de idiomas" >Habilidades, intercambio de idiomas</option>
+                <option value="text=Músicos, grupos musicales"  >Músicos, grupos musicales</option>
+                <option value="text=Perdido, encontrado"  >Perdido, encontrado</option>
+                <option value="text=Reencuentros"  >Reencuentros</option>
+              </select>
+              <hr>
+            </div>
+            <button type="submit" class="registerbtn"  >Empezar</button>

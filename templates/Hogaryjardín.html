@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>locanto automatización</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+        <form action="#" method="post">
+            <div class="container">
+              <h1>Información</h1>
+              <p>Por favor complete este formulario para proceder</p>
+              <hr>
+              
+              <label for="category"><b>Hogar y jardín :</b></label>
+              <select name="subsubventa" id="subServicio" required>
+                <option value="" >Por favor seleccione una opción</option>
+                <option value="text=Artículos para mascotas">Artículos para mascotas</option>
+                <option value="text=Bricolaje y herramientas">Bricolaje y herramientas</option>
+                <option value="text=Decoración">Decoración</option>
+                <option value="text=Dormitorios infantiles">Dormitorios infantiles</option>
+                <option value="text=Electrodomésticos">Electrodomésticos</option>
+                <option value="text=Jardín y jardinería">Jardín y jardinería</option>
+                <option value="text=Lámparas e iluminación">Lámparas e iluminación</option>
+                <option value="text=Menaje de cocina">Menaje de cocina</option>
+                <option value="text=Muebles de cocina">Muebles de cocina</option>
+                <option value="text=Muebles de comedor">Muebles de comedor</option>
+                <option value="text=Muebles para baños">Muebles para baños</option>
+                <option value="text=Muebles para dormitorios">Muebles para dormitorios</option>
+                <option value="text=Muebles para oficinas">Muebles para oficinas</option>
+                <option value="text=Muebles para salones">Muebles para salones</option>
+                <option value="text=Sistemas de Vigilancia">Sistemas de Vigilancia</option>
+                <option value="text=Textiles">Textiles</option>
+                <option value="text=Otros artículos">Otros artículos</option>
+              </select>
+              <hr>
+            </div>
+            <button type="submit" class="registerbtn"  >Empezar</button>
+        </form>
+    </body>
+</html>

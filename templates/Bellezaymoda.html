@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>locanto automatización</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+        <form action="#" method="post">
+            <div class="container">
+              <h1>Información</h1>
+              <p>Por favor complete este formulario para proceder</p>
+              <hr>
+              
+              <label for="category"><b>Belleza y moda :</b></label>
+              <select name="subsubcompraventa" id="subsubcompraventa" required>
+                <option value="" >Por favor seleccione una opción</option>
+                <option value="text=Accesorios y bisutería" >Accesorios y bisutería</option>
+                <option value="text=Moda hombre" >Moda hombre</option>
+                <option value="text=Moda mujer" >Moda mujer</option>
+                <option value="text=Productos de belleza y salud" >Productos de belleza y salud</option>
+                <option value="text=Ropa de bebé e infantil" >Ropa de bebé e infantil</option>
+              </select>
+              <hr>
+            </div>
+            <button type="submit" class="registerbtn"  >Empezar</button>
+        </form>
+    </body>
+</html>

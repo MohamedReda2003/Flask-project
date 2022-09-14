@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>locanto automatización</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='best.css') }}">
+    </head>
+    <body>
+        <form action="#" method="post" enctype="multipart/form-data">
+            
+              <h1>Registrarse</h1>
+              <p>Por favor complete este formulario para proceder</p>
+              <hr>
+
+              <div> 
+                <label for="email"><b>Email :</b></label>
+                <input type="text" pattern=".*@.*\..*" placeholder="Enter Email" name="email" id="email" required>
+              </div>
+              <div>
+                <label for="psw"><b>contraseña :</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+              </div>
+
+              <div>
+                <label for="title"><b>el título de tu anuncio :</b></label>
+                <input type="text" placeholder="Introduce el título de tu anuncio" name="title" id="title" minlength="10" required>
+              </div>
+              <div>
+                <label for="description"><b>Descripción :</b></label>
+              </div>
+              <div>
+                <textarea  minlength="20" required name="description"></textarea>
+              </div>
+              <div>
+                <label for="Dirección"><b>Dirección :</b>(no obligatoria): </label>
+                <input type="text" placeholder="Dirección" name="direction" id="direction" >
+              </div>
+              <div>
+                <label for="Código postal"><b>Código postal :</b>(no obligatoria):</label>
+                <input type="text" placeholder="Código postal" name="Code postal" id="code postal" >
+              </div>
+
+              <div>
+                <label for="Ciudad"><b>Ciudad :</b></label>
+                <input type="text" placeholder="Ciudad" name="city" id="city" required>
+              </div>
+              <div>
+                <label for="phone"><b>número de teléfono</b>(no obligatoria):</label>
+                <input type="tel" id="phone" name="phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+              </div>
+              <div>
+                <label for="website"><b>sitio web</b>(no obligatoria):</label>
+                <input type="url" name="website">
+              </div>
+              
+                {%for i in range(0,images) %}
+                <div>
+                  <label for="image"><b>ruta a la {{i+1}} imagen de destino </b>(no obligatoria) :</label>
+                  <input type="text"  name="image" placeholder=" ejemplo:      C:\:PC\....\image.png" >
+                </div>
+                {%endfor%}
+              
+            </div>
+              
+              <hr>
+            </div>
+            <button type="submit" class="registerbtn" >Register</button>
+          
+          
+        </form>
+    </body>
+</html>

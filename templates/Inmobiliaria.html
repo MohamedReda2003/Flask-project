@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>locanto automatización</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+        <form action="#" method="post">
+            <div class="container">
+              <h1>Información</h1>
+              <p>Por favor complete este formulario para proceder</p>
+              <hr>
+              <div>
+                <label for="category"><b>Inmobiliaria :</b></label>
+              </div>
+              <div>
+              <select name="subinmobiliaria" id="subinmobiliaria" class="subinmobiliaria" required>
+                <option value="" >Por favor seleccione una opción</option>
+                <option value="text=Pisos en alquiler" >Pisos en alquiler</option>
+                <option value="text=Alquiler de habitaciones" >Alquiler de habitaciones</option>
+                <option value="text=Servicios inmobiliarios" >Servicios inmobiliarios</option>
+                <option value="text=Terrenos/parcelas en alquiler" >Terrenos/parcelas en alquiler</option>
+                <option value="text=Casas en alquiler" >Casas en alquiler</option>
+                <option value="text=Oficinas/locales en alquiler" >Oficinas/locales en alquiler</option>
+                <option value="text=Garajes/trasteros en alquiler" >Garajes/trasteros en alquiler</option>
+                <option value="text=Alquileres vacacionales"  >Alquileres vacacionales</option>
+                <option value="text=Pisos en venta" >Pisos en venta</option>
+                <option value="text=Casas en venta" >Casas en venta</option>
+                <option value="text=Oficinas/locales en venta" >Oficinas/locales en venta</option>
+                <option value="text=Garajes/trasteros en venta" >Garajes/trasteros en venta</option>
+                <option value="text=Terrenos, parcelas en venta" >Terrenos, parcelas en venta</option>
+                <option value="text=Casas móviles" >Casas móviles</option>
+                <option value="text=Segunda residencia" >Segunda residencia</option>
+              </select>
+              <div>
+                <label for="Price"><b>Precio del alquiler :</b></label>
+                <input type="number" name="Price" class="slider" id="myRange">
+              </div>
+              <hr>
+              <div>
+                <input type="radio" id="por mes" name="frequency" value="text=1">
+                <label for="html">por mes</label><br>
+                <input type="radio" id="por semana" name="frequency" value="text=2">
+                <label for="css">por semana</label><br>
+                <input type="radio" id="por día" name="frequency" value="text=3">
+                <label for="html">por día</label><br>
+                <input type="radio" id="por año" name="frequency" value="text=4">
+                <label for="css">por año</label><br>
+              </div>
+            </div>
+            <button type="submit" class="registerbtn"  >Empezar</button>
+        </form>
+    </body>
+</html>

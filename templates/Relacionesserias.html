@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>locanto automatización</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+        <form action="#" method="post">
+            <div class="container">
+              <h1>Información</h1>
+              <p>Por favor complete este formulario para proceder</p>
+              <hr>
+              
+              <label for="category"><b>Relaciones serias :</b></label>
+              <select name="subsubcontact" id="subsubventa" required>
+                <option value="" >Por favor seleccione una opción</option>
+                <option value="text=Soy una mujer que busca un hombre" >Soy una mujer que busca un hombre</option>
+                <option value="text=Soy un hombre que busca una mujer" >Soy un hombre que busca una mujer</option>
+                <option value="text=Soy un hombre que busca otro hombre" >Soy un hombre que busca otro hombre</option>
+                <option value="text=Soy una mujer que busca otra mujer" >Soy una mujer que busca otra mujer</option>
+              </select>
+              <hr>
+            </div>
+            <button type="submit" class="registerbtn"  >Empezar</button>
+        </form>
+    </body>
+</html>

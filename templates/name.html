@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>locanto automatización</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='success.css') }}">
+    </head>
+    <body>
+        
+        <h1><b>Enhorabuena, tarea cumplida</b></h1>
+        <ul>
+            {%for i in userwork%}
+  
+                <li> {{i}} : {{userwork[i]}}</li>
+            {%endfor%}
+        </ul>
+        
+    </body>
+
+</html>

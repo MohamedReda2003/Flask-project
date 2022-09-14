@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>locanto automatización</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+        <form action="#" method="post">
+            <div class="container">
+              <h1>Información</h1>
+              <p>Por favor complete este formulario para proceder</p>
+              <hr>
+              
+              <label for="category"><b>Servicios :</b></label>
+              <select name="subServicio" id="subServicio" required>
+                <option value="" >Por favor seleccione una opción</option>
+                <option value="text=Alquiler de coches" >Alquiler de coches</option>
+                <option value="text=Clases particulares" >Clases particulares</option>
+                <option value="text=Consultoras de recursos humanos" >Consultoras de recursos humanos</option>
+                <option value="text=Creación/mantenimiento web" >Creación/mantenimiento web</option>
+                <option value="text=Creativos, diseñadores" >Creativos, diseñadores</option>
+                <option value="text=Informática, asistencia técnica" >Informática, asistencia técnica</option>
+                <option value="text=Salud, belleza" >Salud, belleza</option>
+                <option value="text=Seguros, servicios financieros" >Seguros, servicios financieros</option>
+                <option value="text=Servicios a empresas" >Servicios a empresas</option>
+                <option value="text=Servicios de construcción" >Servicios de construcción</option>
+                <option value="text=Servicios de Fotografía" >Servicios de Fotografía</option>
+                <option value="text=Servicios de jardinería" >Servicios de jardinería</option>
+                <option value="text=Servicios de limpieza" >Servicios de limpieza</option>
+                <option value="text=Servicios de Mudanzas" >Servicios de Mudanzas</option>
+                <option value="text=Servicios de traducción" >Servicios de traducción</option>
+                <option value="text=Servicios inmobiliarios" >Servicios inmobiliarios</option>
+                <option value="text=Servicios legales" >Servicios legales</option>
+                <option value="text=Servicios para el hogar" >Servicios para el hogar</option>
+                <option value="text=Servicios para eventos" >Servicios para eventos</option>
+                <option value="text=Servicios para mascotas" >Servicios para mascotas</option>
+                <option value="text=Talleres mecánicos" >Talleres mecánicos</option>
+                <option value="text=Tarot y esoterismo" >Tarot y esoterismo</option>
+                <option value="text=Turismo y viajes" >Turismo y viajes</option>
+                <option value="text=Otros servicios" >Otros servicios</option>
+              </select>
+              <hr>
+            </div>
+            <button type="submit" class="registerbtn"  >Empezar</button>

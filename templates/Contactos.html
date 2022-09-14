@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>locanto automatización</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+        <form action="#" method="post">
+            <div class="container">
+              <h1>Información</h1>
+              <p>Por favor complete este formulario para proceder</p>
+              <hr>
+
+              <label for="category"><b>Contactos :</b></label>
+              <select name="subcontact" id="subcontact" required>
+                <option value="" >Por favor seleccione una opción</option>
+                <option value="text=Relaciones ocasionales" >Relaciones ocasionales</option>
+                <option value="text=Relaciones serias" >Relaciones serias</option>
+                <option value="text=Servicios eróticos (masajes, etc...)" >Servicios eróticos (masajes, etc...)</option>
+              </select>
+              <div class="slidecontainer" >
+                <label for="Age"><b>Edad:</b></label>
+                <input type="range" min="18" max="150" value="0" class="slider" id="myRange" name="Age" oninput="age.value = this.value">
+                <output id="age" name="Age">0</output>                
+              </div>
+              <hr>
+            </div>
+            <button type="submit" class="registerbtn"  >Empezar</button>

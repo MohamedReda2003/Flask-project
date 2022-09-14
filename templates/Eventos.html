@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>locanto automatización</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+        <form action="#" method="post">
+            <div class="container">
+              <h1>Información</h1>
+              <p>Por favor complete este formulario para proceder</p>
+              <hr>
+              <label for="date"><b>Fecha :</b></label>
+              <input type="date" name="startdate" id="city" >
+
+              <label for="date"><b>Hasta :</b></label>
+              <input type="date"  name="enddate" id="city" >
+              <div>
+                <label for="category"><b>Eventos :</b></label>
+                <select name="subeventos" id="subeventos" required>
+                  <option value="" >Por favor seleccione una opción</option>
+                  <option value="text=Conciertos" >Conciertos</option>
+                  <option value="text=Eventos culturales" >Eventos culturales</option>
+                  <option value="text=Eventos deportivos" >Eventos deportivos</option>
+                  <option value="text=Otros eventos" >Otros eventos</option>
+                  <option value="text=Servicios para eventos" >Servicios para eventos</option>
+                </select>
+              </div>
+              <hr>
+            </div>
+            <button type="submit" class="registerbtn"  >Empezar</button>

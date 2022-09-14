@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>locanto automatización</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+        <form action="#" method="post">
+            <div class="container">
+              <h1>Información</h1>
+              <p>Por favor complete este formulario para proceder</p>
+              <hr>
+              
+              <label for="subcategory"><b>Informática y multimedia :</b></label>
+              <select name="subsubventa" id="subsubventa" required>
+                <option value="" >Por favor seleccione una opción</option>
+                <option value="text=Audio, hifi" >Audio, hifi</option>
+                <option value="text=Computadoras y periféricos" >Computadoras y periféricos</option>
+                <option value="text=Drones" >Drones</option>
+                <option value="text=Electrodomésticos" >Electrodomésticos</option>
+                <option value="text=Fotografía" >Fotografía</option>
+                <option value="text=Móviles y telefonía" >Móviles y telefonía</option>
+                <option value="text=Portátiles" >Portátiles</option>
+                <option value="text=Sistemas de Vigilancia" >Sistemas de Vigilancia</option>
+                <option value="text=Smartwatches" >Smartwatches</option>
+                <option value="text=Tablets, eReaders" >Tablets, eReaders</option>
+                <option value="text=Televisores" >Televisores</option>
+                <option value="text=Videojuegos y realidad virtual" >Videojuegos y realidad virtual</option>
+              </select>
+              <hr>
+            </div>
+            <button type="submit" class="registerbtn"  >Empezar</button>
+        </form>
+    </body>
+</html>
