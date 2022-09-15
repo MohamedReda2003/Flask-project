@@ -268,9 +268,6 @@ rsa==4.7.2
 Rtree==0.9.7
 s3transfer==0.6.0
 schedule==1.1.0
-scikit-image==0.19.2
-scikit-learn==1.1.1
-scikit-learn-intelex==2021.20220215.102710
 scipy==1.7.3
 Scrapy==2.6.2
 seaborn==0.11.2
