@@ -342,7 +342,6 @@ win-unicode-console==0.5
 wincertstore==0.2
 wolframalpha==5.0.0
 wrapt==1.12.1
-wxPython==4.2.0
 xarray==0.20.1
 xlrd==2.0.1
 XlsxWriter==3.0.3
