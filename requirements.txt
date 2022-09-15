@@ -1,5 +1,15 @@
+flask==1.1.2
+click==8.0.4
+colorama==0.4.5
+itsdangerous==2.0.1
+Jinja2==2.11.3
+MarkupSafe==2.0.1
+Werkzeug==2.0.3
 Flask==1.1.2
 pymongo==4.2.0
+greenlet==1.1.2
+pyee==8.1.0
+websockets==10.1
 playwright==1.25.2
 Levenshtein==0.20.2
-
+rapidfuzz==2.6.1
