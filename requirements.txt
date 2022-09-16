@@ -325,7 +325,7 @@ sphinxcontrib-serializinghtml
 spyder
 spyder-kernels
 SQLAlchemy
-stack-data=
+stack-data
 statsmodels
 streamlit
 sympy
