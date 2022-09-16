@@ -1,20 +1,20 @@
-import flask
+
 from flask import Flask,render_template,request,redirect,url_for
-import pymongo
+
 from pymongo import MongoClient
 from playwright.sync_api import Playwright, sync_playwright, expect
 import Levenshtein as lev
 from random import randint
-from flask_apscheduler import APScheduler
-import time 
+
 import datetime
 
 app=Flask(__name__)
-scheduler=APScheduler()
+
+test=True
 
 cluster=MongoClient("mongodb+srv://fiverrautomation:he3eyetR@cluster0.pshiyd4.mongodb.net/?retryWrites=true&w=majority")
 db =cluster["locantoaccount"]
-collection=db["locanto2"]
+collection=db["locanto"]
 user_details={}
 user={}
 image_number=0
@@ -113,15 +113,7 @@ def start():
             'date':today,
             'redo date':redoday
         })
-        # try:
-        #     mypath=os.path.abspath(image)
-        #     user_details.update({'image':image})
-        #     # with open(mypath, 'rb') as f:
-        #     #     contents = f.read()
-        #     # fs.put(contents, filename=email+'_'+title)
-        # except Exception as e:
-        #     print(e)
-        #     pass
+
         try:
             if direction != "":
                 user_details.update({'direction':direction})
@@ -535,16 +527,12 @@ def automate():
     category=user['category']
     subcategory=user['subcategory']
     description=user['description']
-    # try:
 
     try:
         state=user['State']
     except :
         pass
-    # try:
-        
-    # except :
-    #     pass
+
     try:
         transmission=user['transmission']
     except :
@@ -555,10 +543,7 @@ def automate():
         subsubcategory=user['subsubcategory']
     except:
         pass
-    # try:
-        
-    # except:
-    #     pass
+
         
           
     playwright=sync_playwright().start()  
@@ -609,8 +594,6 @@ def automate():
     page.wait_for_timeout(2000)
     try:
         imagepath=user['image path']
-        # for image in imagepath:
-        # page.locator("input[name=\"gallery_imgID\"]").set_input_files(imagepath)
         with page.expect_file_chooser() as fc_info:
             page.wait_for_selector("#js-img_box div").click()
             file_chooser = fc_info.value
@@ -707,9 +690,9 @@ def automate():
     except :
         pass
     try:
-        # page.wait_for_timeout(20000)
+
         page.locator("text=Publicar anuncio »").click()
-        # page.locator("text=Vista preliminar »").click()
+
         
         page.wait_for_timeout(10000)
         context.close()
@@ -734,8 +717,7 @@ def main():
 @app.route('/automate')
 def summon():
     automate()
-    # scheduler.add_job(id = 'Scheduled Task', func=automate, trigger="interval", minutes=60768)
-    # scheduler.start()
+
     today = datetime.date.today()
     second_date=user['redo date']
     second_date = datetime.datetime.strptime(second_date, '%Y-%m-%d').date()
@@ -757,6 +739,8 @@ def summon():
 
 if __name__=='__main__': 
     app.run(debug=True)
+
+
     
     
 
