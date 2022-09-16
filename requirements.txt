@@ -138,11 +138,6 @@ jupyterlab-pygments
 jupyterlab-server
 jupyterlab-widgets
 keyring
-Kivy
-kivy-deps.angle
-kivy-deps.glew
-kivy-deps.sdl2
-Kivy-Garden
 kiwisolver
 lazy-object-proxy
 Levenshtein
