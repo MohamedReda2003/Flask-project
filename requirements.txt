@@ -167,6 +167,7 @@ nbconvert
 nbformat
 nest-asyncio
 networkx
+nltk
 nose
 notebook
 numba
