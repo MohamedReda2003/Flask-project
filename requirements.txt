@@ -223,7 +223,7 @@ pluggy
 poyo
 prometheus-client
 prompt-toolkit
-Protego=
+Protego
 protobuf
 psutil
 ptyprocess
