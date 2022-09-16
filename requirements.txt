@@ -353,7 +353,6 @@ win-unicode-console
 wincertstore
 wolframalpha
 wrapt
-wxPython
 xarray
 xlrd
 XlsxWriter
