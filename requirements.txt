@@ -252,7 +252,6 @@ pytz
 pytz-deprecation-shim
 pyviz-comms
 PyWavelets
-pywin32
 pywin32-ctypes
 pywinpty
 PyYAML
