@@ -235,7 +235,6 @@ pynput
 pyodbc
 pyOpenSSL
 pyparsing
-pypiwin32
 pyreadline
 pyrsistent
 PySocks
