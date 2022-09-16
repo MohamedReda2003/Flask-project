@@ -271,7 +271,6 @@ rich
 rope
 rsa
 Rtree
-ruamel-yaml-conda
 s3transfer
 schedule
 scikit-image
