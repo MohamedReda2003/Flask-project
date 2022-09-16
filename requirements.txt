@@ -2,9 +2,6 @@ aiohttp
 aiosignal
 alabaster
 altair
-anaconda-client
-anaconda-navigator
-anaconda-project
 anyio
 appdirs
 APScheduler
