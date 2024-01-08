@@ -12,7 +12,7 @@ app=Flask(__name__)
 
 test=True
 
-cluster=MongoClient("mongodb+srv://fiverrautomation:he3eyetR@cluster0.pshiyd4.mongodb.net/?retryWrites=true&w=majority")
+cluster=MongoClient("MONGODB TOKEN")
 db =cluster["locantoaccount"]
 collection=db["locanto"]
 user_details={}
